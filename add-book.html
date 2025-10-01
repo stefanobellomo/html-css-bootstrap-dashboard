@@ -92,7 +92,7 @@
                                 Titolo versione italiana
                             </div>
                         </div>
-                        <div class="col mt-4">
+                        <div class="col-lg mt-4">
                             <h4>Genere</h4>
                             <select class="form-select"
                                 aria-label="Default select example">
@@ -104,13 +104,13 @@
                                     scemo</option>
                             </select>
                         </div>
-                        <div class="col mt-4">
+                        <div class="col-lg mt-4">
                             <h4>Anno di pubblicazione</h4>
                             <input type="number" class="form-control"
                                 placeholder="Inserisci l'anno"
                                 aria-label="Publish year">
                         </div>
-                        <div class="col mt-4">
+                        <div class="col-lg mt-4">
                             <h4>ISBN#</h4>
                             <input type="number" class="form-control"
                                 placeholder="Inserisci il codice ISBN#"
@@ -118,21 +118,31 @@
                         </div>
                     </div>
                 </div>
+                <!-- /top section -->
+
                 <div class="container py-3 fw-normal">
-                    <div class="col-12 mt-4">
-                        <h4>Note</h4>
-                        <textarea class="form-control" name="Note" rows="5"
-                            placeholder="Inserisci eventuali note sul libro"></textarea>
+                    <div class="row">
+                        <div class="border mt-4 mb-5"></div>
+                        <div class="col-12">
+                            <h4>Note</h4>
+                            <textarea class="form-control" name="Note" rows="5"
+                                placeholder="Inserisci eventuali note sul libro"></textarea>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox"
+                                value
+                                id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary btn-lg mt-4"
+                                href="./index.html">Aggiungi libro</a>
+                        </div>
                     </div>
-                    <div class="form-check mt-4">
-                        <input class="form-check-input" type="checkbox" value
-                            id="checkDefault">
-                        <label class="form-check-label" for="checkDefault">
-                            Disponibile anche in digitale
-                        </label>
-                    </div>
-                    <a class="btn btn-primary btn-lg mt-4" href="./index.html">Aggiungi libro</a>
                 </div>
+                <!-- /bottom section -->
 
             </main>
         </form>
