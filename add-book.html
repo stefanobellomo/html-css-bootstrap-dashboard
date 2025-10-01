@@ -13,105 +13,128 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="icon">
-                        <img src="./img/duck.png"
-                            alt="Bootstrap" width="50" height="50">
-                    </a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="#">Catalogo libri</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled"
-                                    aria-disabled="true">Anagrafica utenti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled"
-                                    aria-disabled="true">Storico prestiti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled"
-                                    aria-disabled="true">Help</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search"
-                                placeholder="Cerca..." aria-label="Search" />
-                            <button class="btn btn-outline-light"
-                                type="submit">Cerca</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-            <!-- /navbar -->
-
-        </header>
-        <!-- /header -->
-
-        <main>
-            <div class="container py-3 fw-normal">
-                <h1 class="mt-3 mb-5">Nuovo libro</h1>
-                <div class="row">
-                    <div class="col">
-                        <h4>Nome autore</h4>
-                        <input type="text" class="form-control"
-                            placeholder="Inserisci il nome dell'autore"
-                            aria-label="First name">
-                    </div>
-                    <div class="col">
-                        <h4>Cognome autore</h4>
-                        <input type="text" class="form-control"
-                            placeholder="Inserisci il cognome dell'autore"
-                            aria-label="Last name">
-                    </div>
-                    <div class="col-12">
-                        <h4 class="mt-4">Titolo</h4>
-                        <input type="text" class="form-control"
-                            placeholder="Inserisci il titolo del libro"
-                            aria-label="Last name">
-                        <div id="HelpBlock" class="form-text">
-                            Titolo versione italiana
+        <form action method="get" class>
+            <header>
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="icon">
+                            <img src="./img/duck.png"
+                                alt="Bootstrap" width="50" height="50">
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                        aria-current="page"
+                                        href="#">Catalogo libri</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled"
+                                        aria-disabled="true">Anagrafica
+                                        utenti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled"
+                                        aria-disabled="true">Storico
+                                        prestiti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled"
+                                        aria-disabled="true">Help</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search"
+                                    placeholder="Cerca..."
+                                    aria-label="Search" />
+                                <button class="btn btn-outline-light"
+                                    type="submit">Cerca</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="col mt-4">
-                        <h4>Genere</h4>
-                        <select class="form-select"
-                            aria-label="Default select example">
-                            <option selected>Scegli il genere di scemo</option>
-                            <option value="Scemo">Scemo</option>
-                            <option value="Scemo scemo">Scemo scemo</option>
-                            <option value="Diversamente scemo">Diversamente scemo</option>
-                        </select>
-                    </div>
-                    <div class="col mt-4">
-                        <h4>Anno di pubblicazione</h4>
-                        <input type="text" class="form-control"
-                            placeholder="Inserisci l'anno"
-                            aria-label="Publish year">
-                    </div>
-                    <div class="col mt-4">
-                        <h4>ISBN#</h4>
-                        <input type="text" class="form-control"
-                            placeholder="Inserisci il codice ISBN#"
-                            aria-label="ISBN# code">
+                </nav>
+                <!-- /navbar -->
+
+            </header>
+            <!-- /header -->
+
+            <main>
+                <div class="container py-3 fw-normal">
+                    <h1 class="mt-3 mb-5">Nuovo libro</h1>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Nome autore</h4>
+                            <input type="text" class="form-control"
+                                placeholder="Inserisci il nome dell'autore"
+                                aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <h4>Cognome autore</h4>
+                            <input type="text" class="form-control"
+                                placeholder="Inserisci il cognome dell'autore"
+                                aria-label="Last name">
+                        </div>
+                        <div class="col-12">
+                            <h4 class="mt-4">Titolo</h4>
+                            <input type="text" class="form-control"
+                                placeholder="Inserisci il titolo del libro"
+                                aria-label="Last name">
+                            <div id="HelpBlock" class="form-text">
+                                Titolo versione italiana
+                            </div>
+                        </div>
+                        <div class="col mt-4">
+                            <h4>Genere</h4>
+                            <select class="form-select"
+                                aria-label="Default select example">
+                                <option selected>Scegli il genere di
+                                    scemo</option>
+                                <option value="Scemo">Scemo</option>
+                                <option value="Scemo scemo">Scemo scemo</option>
+                                <option value="Diversamente scemo">Diversamente
+                                    scemo</option>
+                            </select>
+                        </div>
+                        <div class="col mt-4">
+                            <h4>Anno di pubblicazione</h4>
+                            <input type="number" class="form-control"
+                                placeholder="Inserisci l'anno"
+                                aria-label="Publish year">
+                        </div>
+                        <div class="col mt-4">
+                            <h4>ISBN#</h4>
+                            <input type="number" class="form-control"
+                                placeholder="Inserisci il codice ISBN#"
+                                aria-label="ISBN# code">
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="container py-3 fw-normal">
+                    <div class="col-12 mt-4">
+                        <h4>Note</h4>
+                        <textarea class="form-control" name="Note" rows="5"
+                            placeholder="Inserisci eventuali note sul libro"></textarea>
+                    </div>
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" value
+                            id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                    <a class="btn btn-primary btn-lg mt-4" href="./index.html">Aggiungi libro</a>
+                </div>
 
-        </main>
-
+            </main>
+        </form>
     </body>
 </html>
